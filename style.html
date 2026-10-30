@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f0f5ff;
+    color: #222;
+}
+
+/* Navigation bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #102a43;
+    color: white;
+}
+
+.logo {
+    color: #64dfdf;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #64dfdf;
+}
+
+/* Background image section */
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(rgba(5, 20, 45, 0.65),
+                        rgba(5, 20, 45, 0.65)),
+        url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #64dfdf;
+    color: #102a43;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* Courses section */
+.courses {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.courses h2,
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #102a43;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 28px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #176b87;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: #176b87;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* About section */
+.about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #dff6ff;
+}
+
+.about p {
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 6px;
+        font-size: 14px;
+    }
+
+
+    
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
